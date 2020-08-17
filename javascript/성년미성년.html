@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    나이: <input type="text" name="" id="age"> 
+    <input type="button" value="판단하기" onclick="goProcess()">
+</body>
+</html>
+
+<script>
+    function goProcess()
+    {
+        age = document.getElementById("age").value;
+         if(age>=19)
+         {
+            alert("당신은 성년입니다.");
+         }
+         else
+         {
+            alert("당신은 미성년입니다.")
+         }
+    }
+</script>

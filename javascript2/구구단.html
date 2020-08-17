@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    단: &nbsp; <input type="text" name="" id="number"><br>
+
+    <p><input type="button" value="클릭" onclick="gosee()">
+    </p>
+   
+   
+</body>
+</html>
+
+<script>
+    
+    function gosee()
+    {
+        number = document.getElementById("number").value;
+        
+        for(i=1; i<=9; i++)
+        {
+            document.write("<h3>" + number + "x" + i + "=" + (number*i) + "</h3>"); 
+        }
+    
+    }
+</script>

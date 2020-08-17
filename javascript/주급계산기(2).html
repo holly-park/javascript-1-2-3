@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    성함: <input type="text" name="" id="name";><br>
+    시간당 급여액: <input type="text" name="" id="perpay";><br>
+    주간 근무시간: <input type="text" name="" id="hours";>
+
+    <input type="button" value="click" onclick="calc()";><br>
+
+    계산된 주급: <input type="text" name="" id="weekpay()";>
+
+</body>
+</html>
+
+<script>
+  function weekpay(){
+      name = document.getElementById("name").value;
+      perpay = document.getElementById("perpay").value;
+      hours= document.getElementById("hours").value;
+      weekpay= name + "님의 주급은: ";
+      weekpay=weekpay + parseInt(perpay)*parseInt(hours);
+      weekpay=weekpay + "원 입니다"
+  }
+
+</script>

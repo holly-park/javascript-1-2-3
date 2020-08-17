@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>짝수판단</h3>
+    입력: <input type="text" name="" id="number">
+    <input type="button"  value="짝수인지 판단" onclick="goSee()">
+</body>
+</html>
+
+<script>
+    function goSee()
+    {
+        number = document.getElementById("number").value;
+        if(number%2 == 0)
+        {
+            alert("짝수입니다!");
+        }
+        else
+        {
+            alert("홀수입니다");
+        }
+    }
+</script>

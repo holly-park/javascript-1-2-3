@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    /*
+
+    산술연산자 : +, -, *, /, %(나머지)
+    연산우선순위: *, /, %  
+                 +, -
+                 만약 같은 순위일 경우 왼쪽에서 오른쪽으로
+                 (우선순위를 높이려면 괄호를 해준다)
+    
+    전치연산자(++i  --i), 후치연산자(i++  i--)
+    변수의 원래 값에 1을 더라하는 수식
+    i = i+1
+    i += 1
+    i++ (전후치연산자)
+    ++i (후치연산자)
+
+
+     */
+
+    i=5;
+    i=i+1;
+    console.log(i);
+   
+    i=5;
+    i+=1;
+    console.log(i);
+
+    i=5;
+    i++;
+    console.log(i);
+
+    i=5;
+    ++i;
+    console.log(i);
+
+    //전치랑 후치랑 단독으로 사용될 때는 동일한 결과를 가져온다
+
+    a=5;
+    b=a++;  //(전치연산자) b에다가 a를 넣고나서 +를 실행
+    console.log("a", a, "b=", b);
+
+    a=5;
+    b=++a; //(후치연산자) a를 더하고나서 b=a
+    console.log("a", a, "b=", b);
+
+    //a= a++ + a++ + ++a ++a ->이런 짓 하지 말자
+
+
+
+   
+</script>

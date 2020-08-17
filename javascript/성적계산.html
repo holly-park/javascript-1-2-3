@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5 style="text-align: center;">성적을 입력하세요</h5>
+    <form style="text-align: center;">
+    <p>
+        국어: <input type="text" name="" id="kor"><br>
+        수학: <input type="text" name="" id="mat"><br>
+        영어: <input type="text" name="" id="eng"><br>
+         <p>
+            <input type="button" value="확인" onclick="calc()">&nbsp;&nbsp;
+            <input type="button" value="초기화">
+        </p>
+        총점: <input type="text" name="" id="tot"><br>
+        평균: <input type="text" name="" id="avg"><br>
+        학점: <input type="text" name="" id="gra"><br></p>
+
+     
+    </form>
+    
+</body>
+</html>
+
+<script>
+    function calc()
+    {
+      kor = document.getElementById("kor").value;
+      mat = document.getElementById("mat").value;
+      eng = document.getElementById("eng").value;
+      tot = parseInt(kor) + parseInt(mat) + parseInt(eng);
+      avg = tot/3;
+      
+      if(avg>=90)
+      {
+          gra="수";
+      }
+      else if(avg>=80)
+      {
+          gra="우";
+      }
+      else if(avg>=70)
+      {
+          gra="미";
+      }
+      else if(avg>=60)
+      {
+          gra="양";
+      }
+      else 
+      {
+          gra="가";
+      }
+
+      document.getElementById("tot").value = tot;
+      document.getElementById("avg").value = avg;
+      document.getElementById("gra").value = gra;
+    }
+</script>
+

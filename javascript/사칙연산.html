@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    숫자: <input type="text" name="" id="lvalue"><br>
+    숫자: <input type="text" name="" id="rvalue"><br>
+    결과: <input type="text" name="" id="result"><br>
+
+    <input type="button" value=" calculate " onclick="add()">
+</body>
+</html>
+
+ <script>
+   function add()
+   {
+     lvalue = document.getElementById("lvalue").value;
+     rvalue = document.getElementById("rvalue").value;
+     result = parseInt(lvalue) + parseInt(rvalue);
+     document.getElementById("result").value = result;
+   };
+
+ </script>

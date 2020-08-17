@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    시급: <input type="text" name="" id="Pay"><br>
+    근무시간: <input type="text" name="" id="Time">
+
+    <input type="button" value="calculate" onclick="week()"><br>
+
+    주급은 <input type="text" name="" id="result">원 입니다.
+</body>
+</html>
+
+<script>
+    function week(){
+      Pay = document.getElementById("Pay").value;
+      Time = document.getElementById("Time").value;
+      result = parseInt(Pay) * parseInt(Time);
+      document.getElementById("result").value=result;
+    }
+</script>

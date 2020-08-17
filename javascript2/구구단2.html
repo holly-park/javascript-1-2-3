@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    단: &nbsp; <input type="text" name="" id="number"><br>
+
+    <p><input type="button" value="클릭" onclick="gosee()">
+    </p>
+    
+    <div id="result" style="width: 300px; height:400px"></div>
+   
+   
+</body>
+</html>
+
+<script>
+    
+    function gosee()
+    {
+        number = document.getElementById("number").value;
+        var result = "";
+        for(i=1; i<=9; i++)
+        {
+          result = result + number + "x" + i + "=" + (parseInt(number)*i) + "<br>";
+
+        }
+    
+        document.getElementById("result").innerHTML=result;
+    }
+    
+</script>

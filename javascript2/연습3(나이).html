@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age</title>
+</head>
+<body>
+    <h1>18살이 넘는지</h1>
+    성함: &nbsp; <input type="text" name="" id="name">
+    나이: &nbsp; <input type="text" name="" id="age"
+    <p>
+        <input type="button" value="입력" onclick="result()">
+    </p>
+</body>
+</html>
+
+<script>
+    function result()
+    {
+        name=document.getElementById("name").value;
+        age=document.getElementById("age").value;
+        if(age>=18)
+        {
+            alert(name + "님은 성년입니다!");
+        }
+        else
+        {
+            alert(name + "님은 미성년입니다!");
+        }
+    }
+</script>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">도형 면적구하기</h1>
+
+    <h4 style="text-align: center;">사각형&삼각형</h4>
+    <p style="text-align: center;">가로길이(밑변) cm: <input type="text" name="" id="x"><br>
+       세로길이(높이) cm: <input type="text" name="" id="y"><br>
+        </p>
+    <p style="text-align: center;"><input type="button" value="사각형" onclick="Sarea()" >
+    <input type="button" value="삼각형" onclick="Tarea()" ></p>
+    <p style="text-align: center; background-color: chartreuse";>사각형 면적 cm2: <input type="text" name="" id="square" ><br>
+       삼각형 면적 cm2: <input type="text" name="" id="triangle" >
+    </p>
+    
+</body>
+</html>
+
+<script>
+    function Sarea()
+    {
+        x=document.getElementById("x").value;
+        y=document.getElementById("y").value;
+        square=parseInt(x)*parseInt(y);
+        
+        document.getElementById("square").value=square;
+        
+    }
+
+    function Tarea()
+    {
+        x=document.getElementById("x").value;
+        y=document.getElementById("y").value;
+        square=parseInt(x)*parseInt(y);
+        square=parseInt(x)*parseInt(y);
+        triangle=square/2;
+        document.getElementById("triangle").value=triangle;
+    }
+</script>

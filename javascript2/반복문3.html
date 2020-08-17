@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    성함: &nbsp; <input type="text" name="" id="username"><br>
+    횟수: &nbsp; <input type="text" name="" id="count"><br>
+
+    <p><input type="button" value="confirm" onclick="result()">
+    </p>
+    <div id="dresult" style="width: 300px; height:400px"></div>
+
+</body>
+</html>
+
+<script>
+    function result()
+    {username = document.getElementById("username").value;
+    count = document.getElementById("count").value;
+
+    for(i=1; i<=count; i++)
+    {
+        console.log(username);
+    }
+    
+    var dresult=""; //공백부터 시작하겠다
+    for(i=1; i<=count; i++)
+    {   
+        dresult = dresult + "<h4>" +username +"</h4>";
+        //document.write("<h4>" + username + "</h4>");
+    }
+    document.getElementById("dresult").innerHTML=dresult;
+    //value속성이 없는 태그들은 값을 읽고 쓸 때 innerHTML 속성을 사용한다
+
+    }
+
+</script>

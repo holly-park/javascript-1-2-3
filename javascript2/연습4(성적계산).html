@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grades</title>
+</head>
+<body>
+    <h1>성적 계산하기</h1>
+    <p>성적을 입력하세요</p>
+    마케팅: &nbsp; <input type="text" name="" id="mk"><br>
+    세무회계: &nbsp; <input type="text" name="" id="ac"><br>
+    조직행동론: &nbsp; <input type="text" name="" id="ob"><br>
+    정보시스템 관리: &nbsp; <input type="text" name="" id="is"><br>
+    사업전략: &nbsp; <input type="text" name="" id="bs"><br>
+    <p>
+        <input type="button" value="계산하기" onclick="grade()">
+    </p>
+    <p>
+        총점: &nbsp; <input type="text" name="" id="total"><br> 
+        평균: &nbsp; <input type="text" name="" id="average"><br> 
+        학점: &nbsp; <input type="text" name="" id="score"><br> 
+    </p>
+</body>
+</html>
+
+<script>
+    function grade()
+    {
+        marketing = document.getElementById("mk").value;
+        accounting = document.getElementById("ac").value;
+        organizaion = document.getElementById("ob").value;
+        system = document.getElementById("is").value;
+        strategy = document.getElementById("bs").value;
+        total =  parseInt(marketing) + parseInt(accounting) + parseInt(organizaion) + parseInt(system) +
+                 parseInt(strategy) ;
+        average = total/5;
+        document.getElementById("total").value=total;
+        document.getElementById("average").value=average;
+        
+        if(average>=90)
+        {
+            score = "A";
+            alert("당신의 학점은" + score + "입니다");
+        }
+        else if(average>=80)
+        {
+            score = "B";
+            alert("당신의 학점은" + score + "입니다");
+        }
+        if(average>=70)
+        {
+            score = "C";
+            alert("당신의 학점은" + score + "입니다");
+        }
+        else if(average>=60)
+        {
+            score = "D";
+            alert("당신의 학점은" + score + "입니다");
+        }
+        else
+        {
+            score = "F";
+            alert("당신의 학점은" + score + "입니다");
+        }
+        document.getElementById("score").value=score;
+
+    }
+</script>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태그 값 읽기</title>
+</head>
+<body>
+    x: <input type="text" name="xvalue" id="x">
+    y: <input type="text" name="yvalue" id="y">
+    <input type="button" value="값읽기" onclick="readValue()">
+    <input type="button" value="sub" onclick="sub()"
+
+</body>
+</html>
+
+<script>
+  function readValue()
+  {
+      x=document.getElementById("x").value;
+      y=document.getElementById("y").value; 
+      alert(x+y); 
+      alert(eval(x)+eval(y));  
+      console.log(parseInt(x) + parseInt(y));
+      
+ //input태그에 접근하려면 document라는 자바스크립트가 제공해주는 객체를 이용해 태그에 접근할 수 있다
+ //document.getElementById("id속성").value의 형태이다 ->외우기
+  }
+
+  function sub()
+  {
+    x=document.getElementById("x").value;
+    y=document.getElementById("y").value; 
+    alert(parseInt(x) - parseInt(y));
+  }
+
+</script>

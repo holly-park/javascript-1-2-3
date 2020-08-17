@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>주급계산기</h1>
+    시간당급여액: &nbsp; <input type="text" name="" id="hpay"> &nbsp;원<br>
+    총근무시간(주간):&nbsp; <input type="text" name="" id="hour"> &nbsp;시간<br>
+    <input type="button" value="계산" onclick="calc()"><br>
+    당신의 주급은 <input type="text" name="" id="juju"> &nbsp;원 입니다.
+</body>
+</html>
+
+<script>
+    function calc()
+    {
+        hpay=document.getElementById("hpay").value;
+        hour=document.getElementById("hour").value;
+        juju=parseInt(hpay)*parseInt(hour);
+        document.getElementById("juju").value=juju;
+        alert("당신의 주급은" + juju + "원 입니다!")
+    }
+</script>

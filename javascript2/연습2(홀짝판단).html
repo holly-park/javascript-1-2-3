@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>even odd</title>
+</head>
+<body>
+    <h1>홀짝판단</h1>
+    숫자를 입력하세요: &nbsp; <input type="text" name="" id="numb">
+    <br> 
+    <input type="button" value="see" onclick="eor()">
+
+</body>
+</html>
+
+<script>
+    function eor()
+    {
+        numb=document.getElementById("numb").value;
+        if(numb % 2 ==0)
+        {
+            alert(numb + "는 짝수입니다!");
+        }
+        else
+        {
+            alert(numb + "는 홀수입니다!");
+        }
+    }
+</script>

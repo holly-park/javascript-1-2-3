@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도형면적구하기</title>
+</head>
+<body>
+    <h1>도형면적구하기</h1>
+    <h5>사각형, 삼각형</h5>
+    <p>가로(밑면) 입력:&nbsp; <input type="text" name="" id="garo">&nbsp; cm <br>
+    세로(높이) 입력:&nbsp; <input type="text" name="" id="sero">&nbsp;cm
+    <br>
+    <input type="button" value="사각형" onclick="sar()"> &nbsp;&nbsp;&nbsp;
+    <input type="button" value="삼각형" onclick="tar()">
+    </p><p>
+    사각형의 면적은&nbsp; <input type="text" name="" id="nurbyS">&nbsp;입니다.<br>
+    삼격형의 면적은&nbsp; <input type="text" name="" id="nurbyT">&nbsp;입니다
+    </p>
+</body>
+</html>
+
+<script>
+   function sar()
+   {
+       garo=document.getElementById("garo").value;
+       sero=document.getElementById("sero").value;
+       nurbyS=parseInt(garo)*parseInt(sero);
+       document.getElementById("nurbyS").value=nurbyS;
+   }
+
+   function tar()
+   {
+       garo=document.getElementById("garo").value;
+       sero=document.getElementById("sero").value;
+       nurbyT=nurbyS/2;
+       document.getElementById("nurbyT").value=nurbyT;
+   }
+
+</script>

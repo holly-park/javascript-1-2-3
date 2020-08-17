@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <h1 style="text-align: center;">함수란</h1>
+    <p>
+        프로그램의 코드를 기능단위로 묶어서 사용하는 것을 함수라 한다. 자바스크립트의 함수는 function이라는 키워드로 시작하고 함수의 이름은 변수의 이름을 붙이는 방법과 동일하다
+        <ul>
+            <li>영어 대소문자, 밑줄문자, 숫자만 가능하다</li>
+            <li>첫시작은 영어대소문자나 밑줄문자만 가능하다</li>
+            <li>예약어(예를 들어 for나 if)처럼 자바스크립트의 명령어로 변수나 함수 이름을 부여할 수 없다</li>
+            <li>함수를 만들어놓는다고 일을 하지는 않는다. 함수는 만들어 놓고 반드시 호출을 해야 일을 한다</li>
+            <li>호출방법은 함수의 이름을 부르면 되는데 보통은 html내의 태그들에서 어떤 동작이 있을 떄 함수를 호출하는 방식을 취하는데 이를 이벤트 프로그래밍 방식이라고 한다<br>
+                예제) 버튼을 누르면 alert창을 띄워보자
+            </li>
+        </ul>
+    </p>
+
+    <input type="button"  value="누르기"  onclick="alert('버튼누르기')">
+    <input type="button"  value="함수의 호출"  onclick="add()";>
+</body>
+</html>
+
+<script>
+    //함수를 선언했다
+   function add()
+   {
+       x = 100;
+       y = 200;
+       alert( x+y );
+   }
+</script>
